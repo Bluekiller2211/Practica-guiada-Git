@@ -60,6 +60,14 @@ Esto hará que ignore los archivos terminados en .class, que empiecen por ~ y **
 
 Para comprobar que esto lo haga bien añadiremos al proyecto un archivo *.java* como ***Hola.java***. Da igual el contenido de este pero por ejemplo haremos que simplemente escriba *Hello world* en el *main*. A parte de este, añadiremos otros dos archivos, uno llamado ***importante~*** y otro llamado ***temporal~***, estos ya pueden estar vacíos.
 
-Una vez creado el archivo ***Hola.java*** lo compilaremos para que nos aparezca también el archivo ***Hola.class*** y ejecutaremos `$git status`, en donde observaremos cómo únicamente aparecerán ***importante~***, el ***.gitignore*** y ***Hola.java*** para añadir. Para poder añadirlo todo más rápidamente haremos `$git add .` y luego le haremos el commit.
+Una vez creado el archivo ***Hola.java*** lo compilaremos para que nos aparezca también el archivo ***Hola.class*** y ejecutaremos `$git status`, en donde observaremos cómo únicamente aparecerán ***importante~***, el ***.gitignore*** y ***Hola.java*** para añadir. Para poder añadir todo lo pendiente más rápidamente haremos `$git add .` y luego le haremos el commit.
+
+---
+Ahora que controlamos mejor Git, ya como podéis comprobar con `$git log` veréis que tenemos tags muy largos para los archivos, así que empezaremos a modificarlos desde esta versión usando `$git tag v.07` o llamando al tag como queráis. En caso de que queráis cambiar otra versión se haría algo parecido a:
+> `$git tag v.03 d98e93ec2e70aa4f371608880c229e11995197bf`
+
+Y si luego hacemos `$git log --oneline` aperecerá el log de forma resumida.
+
+Con git, si quisiéramos ir a una versión anterior para revisar algo del proyecto haremos `$git checkout` y luego el nombre de la versión o "master" *(o el nombre que tengas)* para regresar a la versión actual. Por si te confundes al añadir algún tag, estos se guardan en la ruta *.git/refs/tags*.
 
 ---
