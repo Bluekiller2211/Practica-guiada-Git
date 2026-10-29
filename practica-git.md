@@ -49,3 +49,17 @@ Para mostrar información en git sobre la última versión confirmada se usa `$g
 Hay otros comandos como `$git diff` que muestra las diferencias entre un archivo modificado y el mismo archivo con la última versión confirmada. Para poder ver esto editaremos el *.txt* y le añadimos una línea de texto más como "seis" y le quitaremos una línea de texto ya escrita.
 
 Usando el `$git diff` habiendo borrado algo y habiendo añadido otra aparecerá uno en rojo con el símbolo - antes y otro en verde con el símbolo +. En cambio si únicamente añadimos otra línea como "siete" al final del archivo, únicamente nos aparecerá el añadido con el + a la hora de hacer el `$git diff`.
+
+---
+Para proyectos grandes se recomienda tener un archivo *.gitignore* entonces crearemos uno con el siguiente contenido:
+> *.class 
+> *~
+> !importante~
+
+Esto hará que ignore los archivos terminados en .class, que empiecen por ~ y **no ignorará** los archivos que se llamen importante~. Si quieres añadirle comentarios tendrían que tener un # antes.
+
+Para comprobar que esto lo haga bien añadiremos al proyecto un archivo *.java* como ***Hola.java***. Da igual el contenido de este pero por ejemplo haremos que simplemente escriba *Hello world* en el *main*. A parte de este, añadiremos otros dos archivos, uno llamado ***importante~*** y otro llamado ***temporal~***, estos ya pueden estar vacíos.
+
+Una vez creado el archivo ***Hola.java*** lo compilaremos para que nos aparezca también el archivo ***Hola.class*** y ejecutaremos `$git status`, en donde observaremos cómo únicamente aparecerán ***importante~***, el ***.gitignore*** y ***Hola.java*** para añadir. Para poder añadirlo todo más rápidamente haremos `$git add .` y luego le haremos el commit.
+
+---
