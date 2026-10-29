@@ -68,6 +68,6 @@ Ahora que controlamos mejor Git, ya como podéis comprobar con `$git log` veréi
 
 Y si luego hacemos `$git log --oneline` aperecerá el log de forma resumida.
 
-Con git, si quisiéramos ir a una versión anterior para revisar algo del proyecto haremos `$git checkout` y luego el nombre de la versión o "master" *(o el nombre que tengas)* para regresar a la versión actual. Por si te confundes al añadir algún tag, estos se guardan en la ruta *.git/refs/tags*.
+Con git, si quisiéramos ir a una versión anterior para revisar algo del proyecto haremos `$git checkout` y luego el nombre de la versión o de la rama *(el nombre que tengas)* para regresar a la versión actual. Por si te confundes al añadir algún tag, estos se guardan en la ruta *.git/refs/tags*.
 
 ---
