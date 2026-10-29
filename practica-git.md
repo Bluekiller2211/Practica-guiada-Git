@@ -78,3 +78,5 @@ Después de haber practicado lo suyo con git, vamos a crear una rama a parte de 
 > para poder ver que existe esa nueva rama
 
 Estas ramas se guardan en el directorio *.git/refs/heads* y para cambiar de rama usaremos `$git switch Prueba` o `$git checkcout Prueba`, al igual que antes, si usamos `$git branch` aparecerán las ramas creadas.
+
+Para probar que funciona la nueva rama haremos un commit desde la nueva rama y luego añadiremos una línea de código al archivo ***Hola.java*** y haremos commit desde la nueva rama para ver que funciona correctamente.
