@@ -91,3 +91,11 @@ Para eliminar archivos en un proyecto git, en vez de usar el `rm` habitual se re
 También, si hay algún archivo en seguimiento que se quiere quitar se hará `$git reset HEAD *.class` para sacarlos de la zona de seguimiento *(HEAD)*
 
 ---
+Para esta parte final de la práctica guiada tendremos que tener una cuenta de ***Github*** porque subiremos ahí nuestro proyecto. En mi caso ya tengo una cuenta así que, una vez hecho eso, se creará un proyecto dentro de nuestro *github* para sincronizar estos archivos posteriormente con ese proyecto.
+
+Para sincronizar esta rama local con el respositorio de *Github* tendremos que ejecutar los siguientes comandos:
+> `$git remote add origin https://github.com/MiUsuario/mi_repositorio.git`
+> `$git push -u origin main`
+> `$git push -u origin Prueba`
+
+Obviamente el enlace al repositorio varía según quién lo haga, en mi caso el enlace es: *https://github.com/Bluekiller2211/Practica-guiada-Git.git* y también pasa lo mismo con las ramas, si una de tus ramas no se llamara *main* o *Prueba* se pueden cambiar haciendo `$git branch -M main` antes de sincronizarlo al *github* o cambiando posteriormente modificarlo en el repositorio remoto.
