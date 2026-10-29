@@ -47,3 +47,5 @@ Con Git también tenemos comandos como `$git commit -a -m "Mensaje de prueba"` p
 Para mostrar información en git sobre la última versión confirmada se usa `$git show`, al igual que para poder ver un histórico de los cambios realizados se usaría `$git log`.
 
 Hay otros comandos como `$git diff` que muestra las diferencias entre un archivo modificado y el mismo archivo con la última versión confirmada. Para poder ver esto editaremos el *.txt* y le añadimos una línea de texto más como "seis" y le quitaremos una línea de texto ya escrita.
+
+Usando el `$git diff` habiendo borrado algo y habiendo añadido otra aparecerá uno en rojo con el símbolo - antes y otro en verde con el símbolo +. En cambio si únicamente añadimos otra línea como "siete" al final del archivo, únicamente nos aparecerá el añadido con el + a la hora de hacer el `$git diff`.
