@@ -30,7 +30,7 @@ También al principio de la salida del comando `$git status` debería salirte `O
 ---
 Ahora, para añadir el archivo *.txt* y *.sh* al branch y poder realizar el commit debemos ejecutar `$git add` y el nombre del archivo. Para revisar que esto efectivamente los haya añadido se tiene que usar `$git status` y ya aparecerán en el apartado de `Changes to be commited` y en verde.
 
-Ahora para confirmar estos cambios tendremos que hacer un `$git commit -m`, los cuales siempre necesitan un comentario. En este caso, yo haré el comando `$git commit -m "Confirmando script.sh"`, en este caso dejaremos texto.txt para otro commit a parte, pero bueno, es repetir el proceso de 
+Finalmente para confirmar estos cambios tendremos que hacer un `$git commit -m`, los cuales siempre necesitan un comentario. En este caso, yo haré el comando `$git commit -m "Confirmando script.sh"`, en este caso dejaremos texto.txt para otro commit a parte, pero bueno, es repetir el proceso de 
 `$git add texto.txt`
 `$git commit -m "Ahora confirmo texto.txt`
 `$git status` 
@@ -40,3 +40,5 @@ Y ver cómo se ha confirmado todo lo que se encuentra dentro del directorio, dej
 `nothing to commit, working tree clean`
 
 ---
+
+Una vez hecho todo esto pasaremos a modificar el *.txt* y luego hacer `$git status` para ver que hay que volver a hacer un `$git add` y un `$git commit` de cualquier archivo que hayamos modificado aún si le hicimos un *commit* anteriormente. Eso si, en este caso todavía no vamos a hacer el *commit* si no que vamos a volver a modificar el archivo *.txt* después de añadirlo y volvemos a verlo con `$git status` cómo hay que volver a añadirlo para que esos últimos cambios se añadan también.
