@@ -71,3 +71,10 @@ Y si luego hacemos `$git log --oneline` aperecerá el log de forma resumida.
 Con git, si quisiéramos ir a una versión anterior para revisar algo del proyecto haremos `$git checkout` y luego el nombre de la versión o de la rama *(el nombre que tengas)* para regresar a la versión actual. Por si te confundes al añadir algún tag, estos se guardan en la ruta *.git/refs/tags*.
 
 ---
+Después de haber practicado lo suyo con git, vamos a crear una rama a parte de la principal llamada Prueba por ejemplo, usando:
+> `$git branch Prueba`
+> y
+> `$git log --oneline`
+> para poder ver que existe esa nueva rama
+
+Estas ramas se guardan en el directorio *.git/refs/heads* y para cambiar de rama usaremos `$git switch Prueba` o `$git checkcout Prueba`, al igual que antes, si usamos `$git branch` aparecerán las ramas creadas.
