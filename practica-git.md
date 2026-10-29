@@ -80,3 +80,14 @@ Después de haber practicado lo suyo con git, vamos a crear una rama a parte de 
 Estas ramas se guardan en el directorio *.git/refs/heads* y para cambiar de rama usaremos `$git switch Prueba` o `$git checkcout Prueba`, al igual que antes, si usamos `$git branch` aparecerán las ramas creadas.
 
 Para probar que funciona la nueva rama haremos un commit desde la nueva rama y luego añadiremos una línea de código al archivo ***Hola.java*** y haremos commit desde la nueva rama para ver que funciona correctamente.
+La línea de código que añadí fue:
+> `System.out.println("I have no more branches to commit, said the Ent");`
+
+Luego de esto cambiaremos de rama a la "master" o la primera que tienes creada y podemos ver cómo no se han actualizado los cambios porque se hicieron en otra rama, pero para que se actualicen dentro de la rama principal tendremos que hacer `$git merge Prueba` y ya estaría listo.
+
+---
+Para eliminar archivos en un proyecto git, en vez de usar el `rm` habitual se recomienda y se hará `$git rm` o `$git rm -f` si ya eliminaste un archivo con `rm` y está confirmado.
+
+También, si hay algún archivo en seguimiento que se quiere quitar se hará `$git reset HEAD *.class` para sacarlos de la zona de seguimiento *(HEAD)*
+
+---
