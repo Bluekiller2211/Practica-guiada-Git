@@ -39,6 +39,11 @@ Y ver cómo se ha confirmado todo lo que se encuentra dentro del directorio, dej
 `On branch master`
 `nothing to commit, working tree clean`
 
----
-
 Una vez hecho todo esto pasaremos a modificar el *.txt* y luego hacer `$git status` para ver que hay que volver a hacer un `$git add` y un `$git commit` de cualquier archivo que hayamos modificado aún si le hicimos un *commit* anteriormente. Eso si, en este caso todavía no vamos a hacer el *commit* si no que vamos a volver a modificar el archivo *.txt* después de añadirlo y volvemos a verlo con `$git status` cómo hay que volver a añadirlo para que esos últimos cambios se añadan también.
+
+Con Git también tenemos comandos como `$git commit -a -m "Mensaje de prueba"` para modificar archivos más rápidamente, mezclando el *add* y el *commit* en uno solo, pero cabe recalcar que **esto solo sirve para modificar, si hay que añadir un archivo no sirve**.
+
+---
+Para mostrar información en git sobre la última versión confirmada se usa `$git show`, al igual que para poder ver un histórico de los cambios realizados se usaría `$git log`.
+
+Hay otros comandos como `$git diff` que muestra las diferencias entre un archivo modificado y el mismo archivo con la última versión confirmada. Para poder ver esto editaremos el *.txt* y le añadimos una línea de texto más como "seis" y le quitaremos una línea de texto ya escrita.
